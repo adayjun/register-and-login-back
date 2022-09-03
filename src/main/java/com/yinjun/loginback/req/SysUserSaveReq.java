@@ -3,25 +3,25 @@ package com.yinjun.loginback.req;
 import com.baomidou.mybatisplus.annotation.TableName;
 
 public class SysUserSaveReq {
-private Long id;
-private String LoginName;
+private String loginName;
 private String name;
 private String password;
+private  String checkPass;
+/*
+*
+*  loginName:'',
+          name:'',
+          password: '',
+          checkPass: ''
+* */
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getLoginName() {
-        return LoginName;
+        return loginName;
     }
 
     public void setLoginName(String loginName) {
-        LoginName = loginName;
+       this.loginName = loginName;
     }
 
     public String getName() {
@@ -40,13 +40,21 @@ private String password;
         this.password = password;
     }
 
+    public String getCheckPass() {
+        return checkPass;
+    }
+
+    public void setCheckPass(String checkPass) {
+        this.checkPass = checkPass;
+    }
+
     @Override
     public String toString() {
-        return "SysUserEntity{" +
-                "id=" + id +
-                ", LoginName='" + LoginName + '\'' +
+        return "SysUserSaveReq{" +
+                "LoginName='" + loginName + '\'' +
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
+                ", checkPass='" + checkPass + '\'' +
                 '}';
     }
 }

@@ -22,11 +22,14 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUserEntity
     private SysUserMapper sysUserMapper;
 
     @Override
-    public void register(SysUserSaveReq req) {
+    public boolean register(SysUserSaveReq req) {
         SysUserEntity user = CopyUtil.copy(req, SysUserEntity.class);
             SysUserEntity userDb = selectByLoginName(req.getLoginName());
             if(ObjectUtils.isEmpty(userDb)){
                 sysUserMapper.insert(user);
+                return true;
+            }else {
+                return false;
             }
     }
 

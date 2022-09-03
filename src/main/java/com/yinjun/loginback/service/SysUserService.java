@@ -4,6 +4,6 @@ import com.yinjun.loginback.req.SysUserLoginReq;
 import com.yinjun.loginback.req.SysUserSaveReq;
 
 public interface SysUserService {
-    void register(SysUserSaveReq req);
+    boolean register(SysUserSaveReq req);
     boolean login(SysUserLoginReq req);
 }

@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28c8c4d8-7016-4ce2-ac8e-09b4f0bfe24e" name="变更" comment="">
+    <list default="true" id="28c8c4d8-7016-4ce2-ac8e-09b4f0bfe24e" name="变更" comment="后端">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/req/SysUserSaveReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/req/SysUserSaveReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/service/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/service/impl/SysUserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +53,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.17865707" />
@@ -80,8 +85,16 @@
       <workItem from="1660898921179" duration="1120000" />
       <workItem from="1660900239279" duration="581000" />
       <workItem from="1662132800479" duration="2372000" />
-      <workItem from="1662165183125" duration="2355000" />
+      <workItem from="1662165183125" duration="4624000" />
     </task>
+    <task id="LOCAL-00001" summary="后端">
+      <created>1662167710049</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662167710049</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,5 +111,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="后端" />
+    <option name="LAST_COMMIT_MESSAGE" value="后端" />
   </component>
 </project>

@@ -18,11 +18,12 @@ public class SysUserController {
     private SysUserService sysUserService;
 
     @PostMapping("/sys-user/register")
-    public CommonResp<Object> register( SysUserSaveReq req){
+    public CommonResp<Object> register( @RequestBody SysUserSaveReq req){
        // header("Access-Control-Allow-Origin:*");
         req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
         CommonResp<Object> resp=new CommonResp<>();
-        sysUserService.register(req);
+        boolean res=sysUserService.register(req);
+        resp.setSuccess(res);
         return resp;
     }
 
