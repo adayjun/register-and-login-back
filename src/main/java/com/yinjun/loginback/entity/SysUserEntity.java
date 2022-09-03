@@ -1,17 +1,17 @@
 package com.yinjun.loginback.entity;
-
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
-@TableName("sys_user")
-public class SysUserEntity {
+import javax.persistence.*;
 
-@TableId(type = IdType.AUTO)
-private Long id;
-private String LoginName;
-private String name;
-private String password;
+@Entity
+@Table(name="sys_user")
+public class SysUserEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String loginName;
+    private String name;
+    private String password;
 
     public Long getId() {
         return id;
@@ -22,11 +22,11 @@ private String password;
     }
 
     public String getLoginName() {
-        return LoginName;
+        return loginName;
     }
 
     public void setLoginName(String loginName) {
-        LoginName = loginName;
+        this.loginName = loginName;
     }
 
     public String getName() {
@@ -49,7 +49,7 @@ private String password;
     public String toString() {
         return "SysUserEntity{" +
                 "id=" + id +
-                ", LoginName='" + LoginName + '\'' +
+                ", LoginName='" + loginName + '\'' +
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
                 '}';

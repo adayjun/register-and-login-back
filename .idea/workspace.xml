@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28c8c4d8-7016-4ce2-ac8e-09b4f0bfe24e" name="变更" comment="后端">
+    <list default="true" id="28c8c4d8-7016-4ce2-ac8e-09b4f0bfe24e" name="变更" comment="mybatis升级为jpa">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/repo/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/controller/SysUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/req/SysUserSaveReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/req/SysUserSaveReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/service/SysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/LoginbackApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/LoginbackApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/entity/SysUserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/entity/SysUserEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/service/impl/SysUserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -35,6 +36,25 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="2DYQqfkGoNivSMZRRuQWixyHwLZ" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -42,6 +62,7 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -85,7 +106,8 @@
       <workItem from="1660898921179" duration="1120000" />
       <workItem from="1660900239279" duration="581000" />
       <workItem from="1662132800479" duration="2372000" />
-      <workItem from="1662165183125" duration="4624000" />
+      <workItem from="1662165183125" duration="5083000" />
+      <workItem from="1662170983910" duration="3444000" />
     </task>
     <task id="LOCAL-00001" summary="后端">
       <created>1662167710049</created>
@@ -94,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662167710049</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="注册问题修复">
+      <created>1662169912822</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662169912822</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +143,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="后端" />
-    <option name="LAST_COMMIT_MESSAGE" value="后端" />
+    <MESSAGE value="注册问题修复" />
+    <MESSAGE value="mybatis升级为jpa" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis升级为jpa" />
   </component>
 </project>
