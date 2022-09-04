@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="28c8c4d8-7016-4ce2-ac8e-09b4f0bfe24e" name="变更" comment="mybatis升级为jpa">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/controller/SysUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/resp/CommonResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/resp/CommonResp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +56,6 @@
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="2DYQqfkGoNivSMZRRuQWixyHwLZ" />
   <component name="ProjectViewState">
@@ -111,6 +110,8 @@
       <workItem from="1662132800479" duration="2372000" />
       <workItem from="1662165183125" duration="5083000" />
       <workItem from="1662170983910" duration="9122000" />
+      <workItem from="1662474478745" duration="453000" />
+      <workItem from="1662636069901" duration="2296000" />
     </task>
     <task id="LOCAL-00001" summary="后端">
       <created>1662167710049</created>
