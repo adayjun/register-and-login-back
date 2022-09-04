@@ -35,7 +35,7 @@ public class SysUserController {
     @PostMapping("/sys-user/login")
     public CommonResp<Object> login(@RequestBody SysUserLoginReq req){
         CommonResp<Object> resp=new CommonResp<>();
-        boolean res=sysUserService.login(req);
+        boolean  res=sysUserService.login(req);
         resp.setSuccess(res);
         return resp;
     }
