@@ -1,0 +1,12 @@
+POST http://localhost:8081/sys-user/register
+
+<> 2022-08-21T102153.500.json
+
+###
+
+POST http://localhost:8081/sys-user/register
+
+<> 2022-08-21T102058.404.json
+
+###
+
