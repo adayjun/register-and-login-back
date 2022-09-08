@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28c8c4d8-7016-4ce2-ac8e-09b4f0bfe24e" name="变更" comment="mybatis升级为jpa">
+    <list default="true" id="28c8c4d8-7016-4ce2-ac8e-09b4f0bfe24e" name="变更" comment="引入redis">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/congfig/AuthorityInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/congfig/InterceptorConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/controller/SysUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +19,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--tags" />
@@ -80,6 +81,10 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.17865707" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -111,7 +116,8 @@
       <workItem from="1662165183125" duration="5083000" />
       <workItem from="1662170983910" duration="9122000" />
       <workItem from="1662474478745" duration="453000" />
-      <workItem from="1662636069901" duration="2296000" />
+      <workItem from="1662636069901" duration="3552000" />
+      <workItem from="1662857068498" duration="10187000" />
     </task>
     <task id="LOCAL-00001" summary="后端">
       <created>1662167710049</created>
@@ -134,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662174565400</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="引入redis">
+      <created>1662638530890</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662638530890</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +169,14 @@
     <MESSAGE value="后端" />
     <MESSAGE value="注册问题修复" />
     <MESSAGE value="mybatis升级为jpa" />
-    <option name="LAST_COMMIT_MESSAGE" value="mybatis升级为jpa" />
+    <MESSAGE value="引入redis" />
+    <option name="LAST_COMMIT_MESSAGE" value="引入redis" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="session" language="JAVA" custom="com.mysql.cj.protocol.x.Notice" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
