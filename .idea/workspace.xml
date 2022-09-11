@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28c8c4d8-7016-4ce2-ac8e-09b4f0bfe24e" name="变更" comment="引入redis">
+    <list default="true" id="28c8c4d8-7016-4ce2-ac8e-09b4f0bfe24e" name="变更" comment="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/yinjun/loginback/controller/SysUserController.java&#10;&#10;增加了拦截器 登陆成功后写入session 但其他地方取不到的问题 通过前端开全局代理解决 否则浏览器会认为不在一个域，会新建一个session 跟之前写入的不是一个">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/congfig/AuthorityInterceptor.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/yinjun/loginback/congfig/InterceptorConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -117,7 +117,7 @@
       <workItem from="1662170983910" duration="9122000" />
       <workItem from="1662474478745" duration="453000" />
       <workItem from="1662636069901" duration="3552000" />
-      <workItem from="1662857068498" duration="10187000" />
+      <workItem from="1662857068498" duration="10669000" />
     </task>
     <task id="LOCAL-00001" summary="后端">
       <created>1662167710049</created>
@@ -147,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662638530890</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/yinjun/loginback/controller/SysUserController.java&#10;&#10;增加了拦截器 登陆成功后写入session 但其他地方取不到的问题 通过前端开全局代理解决 否则浏览器会认为不在一个域，会新建一个session 跟之前写入的不是一个">
+      <created>1662867915255</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662867915255</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +177,8 @@
     <MESSAGE value="注册问题修复" />
     <MESSAGE value="mybatis升级为jpa" />
     <MESSAGE value="引入redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="引入redis" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/yinjun/loginback/controller/SysUserController.java&#10;&#10;增加了拦截器 登陆成功后写入session 但其他地方取不到的问题 通过前端开全局代理解决 否则浏览器会认为不在一个域，会新建一个session 跟之前写入的不是一个" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;src/main/java/com/yinjun/loginback/controller/SysUserController.java&#10;&#10;增加了拦截器 登陆成功后写入session 但其他地方取不到的问题 通过前端开全局代理解决 否则浏览器会认为不在一个域，会新建一个session 跟之前写入的不是一个" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
