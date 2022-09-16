@@ -12,11 +12,16 @@ import com.yinjun.loginback.service.SysUserService;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.util.DigestUtils;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @RestController
+@RequestMapping("/sys-user")
 @CrossOrigin(origins = "*")
 public class SysUserController {
 
@@ -31,9 +36,8 @@ public class SysUserController {
     ObjectMapper objectMapper;
 
 
-    @PostMapping("/sys-user/register")
+    @PostMapping("/register")
     public CommonResp<Object> register(@RequestBody SysUserSaveReq req) {
-        // header("Access-Control-Allow-Origin:*");
         req.setPassword(DigestUtils.md5DigestAsHex(req.getPassword().getBytes()));
         CommonResp<Object> resp = new CommonResp<>();
         boolean res = sysUserService.register(req);
@@ -41,19 +45,32 @@ public class SysUserController {
         return resp;
     }
 
-    @PostMapping("/sys-user/login")
+    @PostMapping("/login")
     public CommonResp<Object> login(@RequestBody SysUserLoginReq req) {
         CommonResp<Object> resp = new CommonResp<>();
         boolean res = sysUserService.login(req);
+        if(res) {
+            HttpSession session = getRequest().getSession();
+            session.setAttribute("user_info_in_the_session", req);
+
+
+            System.out.println("=============================================");
+            System.out.println(session.getAttribute("user_info_in_the_session"));
+            System.out.println("=============================================");
+        }
         resp.setSuccess(res);
         return resp;
+    }
+
+    private HttpServletRequest getRequest() {
+        return ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes()).getRequest();
     }
 
     /**
      * 用了 redis
      * @return
      */
-    @PostMapping("/sys-user/ppp")
+    @PostMapping("/ppp")
     public CommonResp<Object> ppp() {
         CommonResp<Object> resp = new CommonResp<>();
         String toString = stringRedisTemplate.opsForValue().get("userall");
